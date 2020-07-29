@@ -1,0 +1,15 @@
+{
+  "name": "typeChain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "watch-and-run": "tsc -w & nodemon -q -w dist dist/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "tsc": "^1.20150623.0",
+    "tsc-watch": "^4.2.9"
+  }
+}

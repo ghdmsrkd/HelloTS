@@ -29,7 +29,7 @@ function Food(props: foodProps) {
   return (
     <h2>
       I love {props.name}<p />
-      <img src={props.image} />
+      <img src={props.image} alt="food" />
     </h2>
   );
 }
@@ -39,14 +39,13 @@ function renderFood(dish: foodProps, key: number) {
 }
 
 const Count = () => {
-  const [item, setItem] = useState(2);
+  const [item, setItem] = useState(1);
   const incrementItem = () => setItem(item + 1);
   const decrementItem = () => setItem(item - 1);
 
   return (
     <div>
       <h1>useState Testing...  {item}</h1>
-      <h2>please push button!</h2>
       <button onClick={incrementItem}>increment</button>
       <button onClick={decrementItem}>decrement</button>
     </div>
@@ -54,10 +53,32 @@ const Count = () => {
 
 }
 
+const useInput = (initialValue: string, validator: Function) => {
+  const [value, setValue] = useState(initialValue);
+  const onChange = (event: any) => {
+    const {
+      target: { value }
+    } = event;
+    let willUpdate = true;
+    //if (typeof validator === "function") {
+    willUpdate = validator(value);
+    //}
+    if (willUpdate) {
+      setValue(value);
+    }
+  };
+  return { value, onChange };
+};
+
 function App() {
+  const maxLength = (value: string) => value.length <= 10;
+  const name = useInput("Mr. ", maxLength);
   return (
     <div className="App">
       <Count />
+      <input placeholder="Name" {...name} />
+      <input type="text" />
+
       {console.log(foods.map((food, i) => renderFood(food, i)))}
       {foods.map((food, i) => renderFood(food, i))}
     </div>

@@ -73,8 +73,21 @@ const useInput = (initialValue: string, validator: Function) => {
 function App() {
   const maxLength = (value: string) => value.length <= 10;
   const name = useInput("Mr. ", maxLength);
+
+  const sayYes =() => console.log("Yes!!");
+  const [number, setNumber] = useState(0);
+  const [aNumber, setANumber] = useState(0);
+  React.useEffect(sayYes, [number]);
+
   return (
     <div className="App">
+
+  <button onClick={() => setNumber(number +1)}>{number}</button>
+  <button onClick={() => setANumber(aNumber +1)}>{aNumber}</button>
+
+
+
+
       <Count />
       <input placeholder="Name" {...name} />
       <input type="text" />

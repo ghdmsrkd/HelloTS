@@ -70,6 +70,16 @@ const useInput = (initialValue: string, validator: Function) => {
   return { value, onChange };
 };
 
+const useTitle =(initialTitle : string) => {
+  const[title, setTitle] = useState(initialTitle);
+  const updateTitle =() =>{
+    const htmlTitle : any = document.querySelector("title");
+    htmlTitle.innerText = title;
+  }
+  React.useEffect(updateTitle, [title]);
+  return setTitle;
+}
+
 function App() {
   const maxLength = (value: string) => value.length <= 10;
   const name = useInput("Mr. ", maxLength);
@@ -79,14 +89,14 @@ function App() {
   const [aNumber, setANumber] = useState(0);
   React.useEffect(sayYes, [number]);
 
+  const titleUpdater = useTitle("Loading ...");
+  setTimeout(() => titleUpdater('wellcome'), 3000);
+
   return (
     <div className="App">
 
-  <button onClick={() => setNumber(number +1)}>{number}</button>
-  <button onClick={() => setANumber(aNumber +1)}>{aNumber}</button>
-
-
-
+      <button onClick={() => setNumber(number +1)}>{number}</button>
+      <button onClick={() => setANumber(aNumber +1)}>{aNumber}</button>
 
       <Count />
       <input placeholder="Name" {...name} />

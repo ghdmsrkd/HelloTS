@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 interface foodProps {
   name: string,
@@ -76,8 +76,25 @@ const useTitle =(initialTitle : string) => {
     const htmlTitle : any = document.querySelector("title");
     htmlTitle.innerText = title;
   }
-  React.useEffect(updateTitle, [title]);
+  useEffect(updateTitle, [title]);
   return setTitle;
+}
+
+const useClick = (onClick : any) =>{
+  const element : any = useRef();
+
+  useEffect(() => {
+    if (element.current){
+      element.current.addEventListener("click", onClick)
+    }
+
+    return () => {
+      if(element.current){
+        element.current.removeEventListener("click", onClick);
+      }
+    }
+  }, []);
+  return element;
 }
 
 function App() {
@@ -87,13 +104,24 @@ function App() {
   const sayYes =() => console.log("Yes!!");
   const [number, setNumber] = useState(0);
   const [aNumber, setANumber] = useState(0);
-  React.useEffect(sayYes, [number]);
+  useEffect(sayYes, [number]);
 
   const titleUpdater = useTitle("Loading ...");
   setTimeout(() => titleUpdater('wellcome'), 3000);
 
+  const potato : any = useRef();
+  setTimeout(() => console.log(potato.current), 5000);
+
+  const sayHello = () => console.log("say hello")
+  const title : any = useClick(sayHello);
+
   return (
     <div className="App">
+
+      <h1 ref={title}>Hi</h1>
+
+      <input ref={potato} placeholder="la"/>
+      
 
       <button onClick={() => setNumber(number +1)}>{number}</button>
       <button onClick={() => setANumber(aNumber +1)}>{aNumber}</button>

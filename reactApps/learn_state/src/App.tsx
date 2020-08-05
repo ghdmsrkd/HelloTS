@@ -6,12 +6,22 @@ class App extends React.Component {
     count:0
   }
   add = () => {
-   this.setState((current : any) => ({count : current.count + 1}));
+   this.setState((current :any ) => ({count : current.count + 1}));
   } 
 
   minus = () => {
     this.setState((current : any) => ({count : current.count - 1}));
   } 
+
+  componentDidMount(){
+    console.log("Hello component!!");
+  }
+  componentDidUpdate(){
+    console.log("component is update!!");
+  }
+  componentWillUnmount(){
+    console.log("bye bye component!!");
+  }
   render(){
     return (
     <div>

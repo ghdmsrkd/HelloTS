@@ -1,38 +1,22 @@
-import React from 'react';
-import './App.css';
+import * as React from 'react';
+import { useState, useEffect, useRef } from 'react';
+import UseAxios from "./UseAxios"
 
-class App extends React.Component {
-  state ={
-    count:0
-  }
-  add = () => {
-   this.setState((current :any ) => ({count : current.count + 1}));
-  } 
 
-  minus = () => {
-    this.setState((current : any) => ({count : current.count - 1}));
-  } 
+function App() {
+  const { loading, error, data, refetch } = UseAxios({ url: "https://yts.am/api/v2/list_movies.json?sort_by=rating" });
+  //console.log(loading, error, data);
+  const movies = data;
+  console.log(movies);
 
-  componentDidMount(){
-    console.log("Hello component!!");
-  }
-  componentDidUpdate(){
-    console.log("component is update!!");
-  }
-  componentWillUnmount(){
-    console.log("bye bye component!!");
-  }
-  render(){
-    return (
-    <div>
-      <h1>
-        the number is : {this.state.count}
-      </h1>
-      <button onClick={this.add}>Add</button>
-      <button onClick={this.minus}>Minus</button>
+
+
+  return (
+    <div className="App">
+      <h1>{loading ? "Loading..." : "data"}</h1>
+
     </div>
-    )
-  };
+  );
 }
 
 export default App;

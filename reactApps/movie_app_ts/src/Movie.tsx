@@ -24,7 +24,7 @@ function Movie(info: info) {
                     ))}
 
                 </ul>
-                <p className="movie_summary">{info.summary}</p>
+                <p className="movie_summary">{info.summary.slice(0, 140)}...</p>
             </div>
         </div>
     );

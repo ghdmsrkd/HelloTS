@@ -10,7 +10,7 @@ const UseAxios = (opts: { url: string }, axiosInstance = defaultAxios) => {
     const [state, setState] = useState({
         loading: true,
         error: null,
-        data: Array
+        data: []
     });
 
     const [trigger, setTrigger] = useState(0);

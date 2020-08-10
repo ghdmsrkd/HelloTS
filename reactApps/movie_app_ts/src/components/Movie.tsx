@@ -1,5 +1,6 @@
 import React from "react";
 import "./Movie.css";
+import {Link} from "react-router-dom"
 
 interface info {
     id: number,
@@ -13,6 +14,14 @@ interface info {
 function Movie(info: info) {
 
     return (
+        <Link
+            to={{
+                pathname : "/movie-detail",
+                state :{
+                    info
+                }   
+            }}
+        >
         <div className="movie">
             <img src={info.poster} alt={info.title} title={info.title} />
             <div className="movie_data">
@@ -27,6 +36,7 @@ function Movie(info: info) {
                 <p className="movie_summary">{info.summary.slice(0, 140)}...</p>
             </div>
         </div>
+        </Link>
     );
 }
 

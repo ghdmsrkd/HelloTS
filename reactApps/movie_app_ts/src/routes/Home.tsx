@@ -4,7 +4,7 @@ import Movie from "../components/Movie"
 import "./Home.css";
 
 function Home() {
-  const { loading, error, data } = UseAxios({ url: "https://yts.am/api/v2/list_movies.json?sort_by=rating" });
+  const { loading, data } = UseAxios({ url: "https://yts.am/api/v2/list_movies.json?sort_by=rating" });
   const movies = data;
 
   return (

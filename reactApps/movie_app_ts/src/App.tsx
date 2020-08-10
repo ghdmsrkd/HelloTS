@@ -1,16 +1,21 @@
-import * as React from 'react';
-import UseAxios from "./utils/UseAxios"
-import Movie from "./components/Movie"
+import * as React from 'react'
+import {HashRouter, Route} from "react-router-dom"
+import About from "./routes/About"
+import Home from "./routes/Home"
+import Detail from "./routes/Detail"
+import Navigation from "./components/Navigation";
 import "./App.css";
 
 function App() {
-  const { loading, error, data } = UseAxios({ url: "https://yts.am/api/v2/list_movies.json?sort_by=rating" });
-  const movies = data;
-
   return (
-    <span>
-      somthing...
-    </span>
+    <div>
+      <HashRouter>
+        <Navigation />
+        <Route path="/" exact={true} component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/movie-detail" component={Detail} />
+      </HashRouter>
+    </div>
   );
 }
 

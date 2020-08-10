@@ -29,7 +29,7 @@ const UseAxios = (opts: { url: string }, axiosInstance = defaultAxios) => {
                 setState({ ...state, loading: false, error })
             })
         }
-    }, []);
+    }, [axiosInstance, opts, state]);
 
     return { ...state }
 }

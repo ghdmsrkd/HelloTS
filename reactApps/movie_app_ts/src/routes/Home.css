@@ -1,17 +1,4 @@
-* {
-    box-sizing: border-box;
-  }
-  
-body {
-    margin: 0;	
-    padding: 0;	 
-    background-color: #eff3f7;
-    height: 100%;	 
-  }	
-  
-  html,
-  body,
-  #potato,
+
   .container {
     height: 100%;
     display: flex;
@@ -20,7 +7,7 @@ body {
   
   .loader {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

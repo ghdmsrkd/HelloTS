@@ -6,7 +6,7 @@ function App() {
   const minus : any = document.getElementById("minus")
   const number : any = document.querySelector("span")
 
-  number.innerText = 0
+  number.innerText = 10
 
   const ADD = "ADD"
   const MINUS = "MINUS"

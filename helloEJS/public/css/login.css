@@ -1,0 +1,122 @@
+.sign-warp{
+    /* display: block; */
+    padding-top: 60px;
+}
+
+
+.title-bar{
+    position: relative;
+    top: -65px;
+    display: flex;
+    padding: 20px 16px;
+    justify-items: center;
+    align-items: center;
+}
+
+.title-bar a{
+    display: flex;
+    align-items: center;
+}
+
+.title-bar h1{
+    position: relative;
+    margin: 0 auto;
+    padding-right: 10%;
+    /* text-align: center; */
+    font-family: SpoqaHanSans;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0.89;
+    letter-spacing: -0.41px;
+    color: var(--white-ffffff);
+}
+
+
+.subPage-banner{
+    height: 110px;
+    /* overflow: hidden; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+            
+}
+
+.subPage-banner-img{
+    
+    height: 100%;
+    width: 100%;
+    /* overflow: hidde; */
+    background-size: cover;
+}
+
+.account-settings{
+    position: relative;
+    top: -30px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--grey-60-72787-f);
+}
+
+.account-settings a{
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--grey-60-72787-f);
+}
+
+
+
+
+.message-link{
+    padding: 3px;
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.message-modal-card{
+    width: 90%;
+    height: 140px;
+    border-radius: 10px;
+    background-color: var(--white-ffffff);
+}
+
+.message-modal-card .modal-card-head{
+    border: none;
+    background-color: var(--white-ffffff);
+}
+
+
+
+.message-modal-card .modal-card-foot{
+    border: none;
+    background-color: var(--white-ffffff);
+}
+
+
+.message-modal-card .modal-card-title{
+    text-align: center;
+    font-family: SpoqaHanSans;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.message-modal-card .modal-card-body h5{
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: -0.41px;
+    color: var(--grey-60-72787-f);
+}

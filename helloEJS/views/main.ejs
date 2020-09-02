@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <%- include ("./layouts/head.ejs") %>
+  <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body onload="setNavbar()">
+
+<!-- 스크롤시 네비바의 색상을 처리함 -->
+
+
+
+  <!-- headers -->
+  <%- include ("./layouts/header.ejs") %>
+
+
+
+  <!-- 점보트론-->
+  <section class="section">
+
+    <!-- 배너의 이미지 부분-->
+    <div id="banner" class="baner-warp">
+      <div class="banner-info">
+        <p class="banner-subtitle">글로벌 부동산 투자 정보 공유 플랫폼</p>
+        <p class="banner-title">부동산 투자에 <strong>[혁신]</strong>을 더하다</p>
+      </div>
+      <div class="banner-img">
+        <img src="/public/images/landbox_banner_mobile.jpg" alt="banner">
+      </div>
+    </div>
+
+    <!-- 배너의 카드 부분 -->
+    <div class="banner-card-warp">
+      <div class="columns">
+        <div class="column">
+          <div class="columns is-mobile">
+            <div class="column banner-column is-half">
+              <div class="banner-card bg-na">
+                <h1 class="banner-card-title">2020</h1>
+                <h3 class="banner-card-subtitle">거래소 상장</h3>
+              </div>
+            </div>
+            <div class="column banner-column is-half">
+              <div class="banner-card bg-ca">
+                <h1 class="banner-card-title">16</h1>
+                <h3 class="banner-card-subtitle">토지 이벤트</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="columns is-mobile">
+            <div class="column banner-column is-half ">
+              <div class="banner-card bg-bl">
+                <h1 class="banner-card-title">1,750,000</h1>
+                <h3 class="banner-card-subtitle">사업지 총 면적(㎡)</h3>
+              </div>
+            </div>
+            <div class="column banner-column is-half ">
+              <div class="banner-card bg-br">
+                <h1 class="banner-card-title">25,468</h1>
+                <h3 class="banner-card-subtitle">비즈니스 총 회원수</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--메인컨텐츠-->
+  <section class="section">
+    <!-- 토큰세일 부분 -->
+    <div class="align-center">
+      <div class="contents-category-title align-center">
+        토큰세일
+        <div class="contents-category-title-underbar"></div>
+      </div>
+    </div>
+
+    <div class="contents-tokensale-warp align-left">
+      <div class="mainPage-category-warp">
+        <div class="columns is-mobile tokensale-info-nows ">
+          <div class="column tokensale-info-now">
+            <div class="tokensale-info-now-round">7</div>
+            <div class="tokensale-info-now-round">5</div>
+            <div class="tokensale-info-now-when">days</div>
+          </div>
+          <div class="column tokensale-info-now">
+            <div class="tokensale-info-now-round">1</div>
+            <div class="tokensale-info-now-round">6</div>
+            <div class="tokensale-info-now-when">hour</div>
+          </div>
+          <div class="column tokensale-info-now">
+            <div class="tokensale-info-now-round">4</div>
+            <div class="tokensale-info-now-round">6</div>
+            <div class="tokensale-info-now-when">minutes</div>
+          </div>
+          <div class="column tokensale-info-now">
+            <div class="tokensale-info-now-round">0</div>
+            <div class="tokensale-info-now-round">4</div>
+            <div class="tokensale-info-now-when">seconds</div>
+          </div>
+        </div>
+        <div class="progressbar-box">
+          <p class="progress-percent" style="width:85%" data-value="85"></p>
+          <progress max="100" value="85" class="progress-bar"></progress>
+        </div>
+      </div>
+      <!-- 박스 부분-->
+      <div class="box">
+        <article class="media">
+
+          <div class="content">
+            <img class="land-icon" src="/public/images/land_icon.png" alt="icon">
+            <h4 class="landtoken-box-title">랜드토큰</h4>
+            <p class="landtoken-box-description">
+              내 손안의 글로벌 부동산 투자 정보 공유 플랫폼!</br>
+              부동산, 코인 등 각 분야의 전문가 그룹에 의해 개인이 접근하기 어려운 부동산 투자 사업에 효율적이고
+              안전하게 자산 관리를 할 수 있으며 플랫폼 활성화 기여도에 따른 레벨 별 에어드랍을
+              제공합니다.
+            </p>
+            <div class="landtoken-box-foot">
+              <div class="landtoken-box-foot-info">
+                <p><strong>구매가격</strong> 1LAND = 1.1USD</p>
+              </div>
+              <div class="landtoken-box-foot-info">
+                <p><strong>결제수단</strong> BTC</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 버튼부분 -->
+      <div class="align-center">
+        <button class="button is-rounded is-info is-active landtoken-button">구매하기</button>
+      </div>
+      
+    </div>
+
+
+    <!--랜드옥션 start-->
+    <div class="align-center">
+      <div class="contents-category-title align-center">
+        랜드옥션
+        <div class="contents-category-title-underbar"></div>
+      </div>
+    </div>
+
+    <div class="mainPage-category-warp">
+      <div class="card product-card">
+          <div class="card-image">
+            <figure class="image is-2by1">
+              <img src="/public/images/product1.png" alt="product">
+            </figure>
+          </div>
+        <div class="card-content product-infos">
+          <div class="media-content">
+            <h1 class="product-title">서래마을 2층 단독주택</h1>
+            
+
+            <h5 class="product-located">
+              <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
+              서울시 서초구
+            </h5>
+          </div>
+            
+          <div class="product-details">
+            <h5 class="product-detail">면적 : 500 (㎡)</h5>
+            <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
+            <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card product-card">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <img src="/public/images/product2.png" alt="product">
+          </figure>
+        </div>
+        <div class="card-content product-infos">
+          <div class="media-content">
+            <h1 class="product-title">서래마을 2층 단독주택</h1>
+            
+
+            <h5 class="product-located">
+              <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
+              서울시 서초구
+            </h5>
+          </div>
+            
+          <div class="product-details">
+            <h5 class="product-detail">면적 : 500 (㎡)</h5>
+            <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
+            <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="align-center">
+        <div class="more-button">
+          물건더보기
+          <img src="/public/images/arrow_right-circle.png" alt="arrow_right_circle">
+        </div>
+      </a>
+    </div>
+    <!--랜드옥션 end-->
+
+
+    <!--아카데미 start-->
+    <div class="align-center">
+      <div class="contents-category-title align-center">
+        랜드아카데미
+        <div class="contents-category-title-underbar"></div>
+      </div>
+    </div>
+
+    
+    <div class="mainPage-category-warp">
+      <!--랜드아카데미 tag부분-->
+      <div class="tags landAcademy-tags columns">
+        <div class="tag landAcademy-tag-is-active column ">랜드옥션 물건 분석</div>
+        <div class="tag landAcademy-tag column is-one-quarter">프리미엄 강의</div>
+        <div class="tag landAcademy-tag column is-one-quarter">무료 강의</div>
+      </div>
+
+      <!--동영상 card-->
+      <div class="card video-card">
+        <div class="card-image">
+          <figure class="image is-5by3">
+            <img src="/public/images/video_thumbnail1.png" alt="video_thumbnail1">
+          </figure>
+        </div>
+        <div class="card-content video-card-infos">
+          <div class="media-content">
+            <h1 class="video-card-title">서래마을 2층 단독주택 물건 분석</h1>
+            <div class="video-card-tags align-left">
+              <div class="video-card-tag bg-pk">신규강의</div>
+              <div class="video-card-tag bg-sk">인기강의</div>
+            </div>
+          </div>           
+          <div class="align-right">
+            <button class="video-card-button button is-info is-active ">강의보기</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card product-card">
+        <div class="card-image">
+          <figure class="image is-5by3">
+            <img src="/public/images/video_thumbnail1.png" alt="product">
+          </figure>
+        </div>
+        <div class="card-content product-infos">
+          <div class="media-content">
+            <h1 class="video-card-title">서래마을 2층 단독주택 물건 분석</h1>
+            <div class="video-card-tags align-left">
+              <div class="video-card-tag bg-pk">신규강의</div>
+              <div class="video-card-tag bg-sk">인기강의</div>
+            </div>
+          </div>           
+          <div class="align-right">
+            <button class="video-card-button button is-info is-active ">강의보기</button>
+          </div>
+        </div>
+      </div>
+
+      <a href="www.naver.com" class="align-center">
+        <div class="more-button">
+          강의 더 보기
+          <img src="/public/images/arrow_right-circle.png" alt="arrow_right_circle">
+        </div>
+      </a>
+    </div>
+
+    <div class="align-center comingsoon-warp">
+      <div class="contents-category-title align-center">
+        COMING SOON
+        <div class="contents-category-title-underbar"></div>
+      </div>
+      <div class="mainPage-category-warp">
+        <ul>
+          <li>
+            <img src="/public/images/landFinance_icon.png" alt="landFinance_icon">
+            <div class="align-left">
+              <h3>랜드파이낸스</h3>
+              <h5>랜드파이낸스와 관련된 간단한 설명</h5>
+            </div>
+          </li>
+          <li>
+            <div class="align-right">
+              <h3>랜드세이빙</h3>
+              <h5>랜드세이빙과 관련된 간단한 설명</h5>
+            </div>
+            <img src="/public/images/landSaving_icon.png" alt="landSaving_icon">
+          </li>
+        </ul>
+      </div>  
+    </div>
+  </section>
+
+
+  <!-- 풋터-->
+  <%- include ("layouts/footer") %> 
+
+
+
+</body>
+
+</html>

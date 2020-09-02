@@ -1,0 +1,67 @@
+.findIdChecked-warp{
+    padding-top: 48px;
+    height: 500px;
+}
+
+.title-bar{
+    display: flex;
+    padding: 20px 16px;
+    justify-items: center;
+    align-items: center;
+}
+
+.title-bar a{
+    display: flex;
+    align-items: center;
+}
+
+.title-bar h1{
+    position: relative;
+    margin: 0 auto;
+    padding-right: 10%;
+    /* text-align: center; */
+    font-family: SpoqaHanSans;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0.89;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.findIdChecked-message{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    text-align: center;
+    margin: 24px 0;
+
+    height: 116px;
+    border-radius: 5px;
+    background-color: var(--grey-20-f-7-f-8-f-9);
+}
+
+.findIdChecked-message h3{
+    margin-top: 10px;
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.findIdChecked-message div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--white-ffffff);
+
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}

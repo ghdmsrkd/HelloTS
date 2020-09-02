@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include ("layouts/head") %>
+  <link rel="stylesheet" href="/public/css/emailCheck.css">
+</head>
+<body onload="setNavbar()">
+
+  <%- include("layouts/header") %> 
+
+
+  <!-- 주 내용-->
+  <section section class="subPage-warp align-center">
+    <div class="messagepage-section">
+        <div class="messagePage-img">
+            <img src="/public/images/email_check.png" alt="email_check.png">
+        </div>
+        <div class="messagePage-message">
+         회원가입 인증 이메일이 발송되었습니다.<br>
+         이메일의 링크를 통해 회원가입을 완료해주세요!
+        </div>
+        <div class="messagePage-btns">
+            <button class="btn-second">이메일 재발송</button>
+            <button class="btn-primary">확인</button>
+         </div>
+    </div>
+    
+
+ </section>
+
+  <!-- 풋터-->
+  <%- include("layouts/footer.ejs") %> 
+
+</body>
+
+</html>

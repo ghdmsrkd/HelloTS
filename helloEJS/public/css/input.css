@@ -1,0 +1,189 @@
+.btn-primary{
+    /* position: relative; */
+    /* margin-top: 50px; */
+    margin: 0 3px;
+    width: 140px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #284b63;
+
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: var(--white-ffffff);
+}
+
+.btn-primary-sm{
+    width: 83px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #284b63;
+
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--white-ffffff);
+}
+
+.btn-primary-xl{
+    
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #284b63;
+
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: var(--white-ffffff);
+}
+
+.btn-primary-checked{
+    background-color: var(--grey-40-c-9-cdd-2);
+    color: var(--white-ffffff);
+
+}
+
+.btn-second{
+    width: 140px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    border: solid 1px var(--dark-green-2-f-4858);
+    background-color: var(--white-ffffff);
+
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: var(--dark-green-2-f-4858);
+}
+
+.input-submit{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #284b63;
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--white-ffffff);
+}
+
+
+.form-section{
+    padding: 8px 16px;
+}
+
+.form-title{
+    margin: 15px 0;
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.input-block{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.input-inline{
+    display: flex;
+    margin: 15px 0;
+}
+
+.input-inline-btn{
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+.input-text{
+    width: 100%;
+    padding: 5px 0;
+    margin: 0 3px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px var(--grey-40-c-9-cdd-2);
+    padding: 0px 16px;
+}
+
+.input-text::placeholder{
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--grey-60-72787-f);
+    
+}
+
+.input-text-checked{
+    background-color: var(--grey-20-f-7-f-8-f-9);
+    color: var(--grey-50-9-ea-4-aa);
+    border: none;
+}
+
+.input-label{
+    padding: 5px 0;
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.input-description{
+    padding: 5px 0;
+    font-family: SpoqaHanSans;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--grey-60-72787-f);
+}
+
+.input-checkbox{
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    padding: 3px;
+}
+
+.input-checkbox-label{
+    padding: 3px;
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.input-is-necessary{
+    
+    font-family: SpoqaHanSans;
+    font-size: 8px;
+    line-height: 0.88;
+    letter-spacing: -0.41px;
+    color: #dd1c1a;
+}
+

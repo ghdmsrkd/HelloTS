@@ -1,0 +1,269 @@
+/* 네비바 스타일 */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0);
+    padding: 8px 12px;
+    z-index: 1;
+}
+
+.navbar ul{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.navbar ul li{
+    padding: 0 5px;
+}
+
+.scroled {
+    height: 48px;
+    background-color:  var(--white-ffffff);
+    
+}
+
+
+
+
+
+/* 사이드바 스타일 */
+#sidenav-bg{
+    background-color: rgba(0,0,0,0.4);
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.1s;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: var(--white-ffffff);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0px;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  
+}
+
+.sidemenu-contents{
+    padding: 10px 10px;
+}
+
+.sidemenu-contents .sidmenu-buttons ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidemenu-contents .sidmenu-buttons ul li{   
+    padding-left: 15px;
+}
+
+.sidmenu-userinfo, .sidmenu-categorys, .sidmenu-events, .sidmenu-board, .sidemenu-account{
+    padding-bottom: 10px;
+    display:block;
+    border-bottom: 1px solid var(--grey-30-e-8-ebed);
+    /* transition: 0.5s; */
+}
+
+.sidemenu-account{
+    text-align: center;
+}
+
+.account-btns{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.account-btns button{
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
+}
+
+.sidemenu-account h3{
+    padding-bottom: 6px;
+    font-family: SpoqaHanSans;
+    font-size: 10px;
+    line-height: 0.8;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.sidemenu-user-name{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.sidemenu-user-name strong{
+    font-weight: bold;
+}
+
+.sidemenu-contents a:hover{
+    color: var(--grey-60-72787-f);
+}
+
+.sidmenu-userinfo ul li{
+    margin: 5px 5px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: var(--grey-20-f-7-f-8-f-9);
+    display: flex;
+    justify-content: space-between;
+
+    font-family: SpoqaHanSans;
+    font-size: 10px;
+    
+    color: var(--grey-60-72787-f);
+    padding: 1px 5px 5px 5px;
+}
+
+.sidmenu-userinfo ul li strong{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.sidmenu-categorys ul li{
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-around; 
+
+    align-items: flex-end;
+    text-align: center;
+}
+
+.sidmenu-categorys ul li a{
+    width: 60px;
+}
+
+.sidmenu-categorys ul li a h5{
+    margin-top: 8px;
+    font-family: SpoqaHanSans;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+
+
+.sidmenu-events{
+    margin: 10px 0;
+}
+
+
+.sidmenu-events a{
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 0.83;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.sidmenu-events div a{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* justify-content: space-evenly; */
+    height: 52px;
+    background-color: #ececec;
+}
+
+.sidmenu-events div a h4{
+    width: 50%;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.sidmenu-events div a div{
+    /* width: 50%; */
+    padding : 5px 5px;
+    margin-bottom: 0px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    /* justify-content: ; */
+    background-color: var(--grey-20-f-7-f-8-f-9);
+
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.sidmenu-events div a div h5{
+    
+    font-size: 6px;
+    line-height: 0.75;
+    letter-spacing: -0.41px;
+    color: var(--grey-50-9-ea-4-aa);
+}
+
+
+
+
+.sidmenu-board a{
+    display: block;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 0.83;
+    letter-spacing: -0.41px;
+    color: var(--grey-70-454-c-53);
+}
+
+.sidmenu-logout{
+    display: flex;
+    justify-content: flex-end;
+    
+    align-content: center;
+    align-items: center;
+}
+
+.sidmenu-logout a{
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 0;
+
+    align-content: center;
+    align-items: center;
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--dark-forest-green-1-a-535-c-2);
+}
+
+.sidmenu-logout a img{
+    padding-right: 5px;
+}

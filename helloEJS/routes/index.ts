@@ -33,6 +33,10 @@ router.get('/account/findPw', async (req, res) =>{
 //     res.render('noticeList', {});
 // })
 
+router.get('/auction/product_list', async (req, res) =>{
+    res.render('auction/productList', {});
+})
+
 export default router;
 
 

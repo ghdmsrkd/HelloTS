@@ -113,8 +113,11 @@
 
 .input-inline-btn{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
     margin: 5px 0;
-    justify-content: space-between;
+    width: 100%;
 }
 
 .input-text{
@@ -187,3 +190,45 @@
     color: #dd1c1a;
 }
 
+.switch-btns{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.switch-btn{
+    border: solid 1px var(--dark-green-2-f-4858);
+    background-color: var(--white-ffffff);
+    width: 100%;
+    height: 40px;
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: var(--dark-green-2-f-4858);
+}
+
+.switch-btn-left{
+    border-radius: 5px 0 0 5px;
+    
+}
+
+.switch-btn-right{
+    border-radius: 0 5px 5px 0;
+}
+
+.switch-btn-is-clicked{
+    background-color: var(--dark-green-2-f-4858);
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: var(--white-ffffff);
+}

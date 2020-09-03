@@ -1,0 +1,60 @@
+
+
+
+.filters{
+
+}
+
+.filters h3{
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.filter-items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 16px 0;
+}
+
+.filter-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 10px;
+    margin: 5px 0.5em;
+
+    height: 32px;
+    min-width: 58px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--grey-20-f-7-f-8-f-9);
+
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.filter-item-is-checked{
+    background-color: #dfebf2;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--dark-green-2-f-4858);
+}

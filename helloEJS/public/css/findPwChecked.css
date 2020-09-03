@@ -1,0 +1,26 @@
+.findPwChecked-warp{
+    /* height: 600px; */
+    padding-top: 48px;
+}
+
+
+.messagepage-section{
+    padding: 60px 16px;
+    
+}
+
+.messagePage-btns{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+
+.messagePage-message{
+    padding: 20px 0;
+    font-family: SpoqaHanSans;
+    font-size: 13px;
+    line-height: 1.43;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}

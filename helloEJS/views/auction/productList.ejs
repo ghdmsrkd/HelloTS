@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include ("../layouts/head") %>
+  <link rel="stylesheet" href="/public/css/productList.css">
+</head>
+
+<body onload="setNavbar()">
+
+  <%- include("../layouts/header") %>
+
+  <div id="modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">필터 설정</p>
+        <button class="modal-close" data-target="modal" onclick="modalClose(this)"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div class="filters">
+          <h3>정렬 순서</h3>
+          <ul class="filter-items">
+            <li>
+              <button class="filter-item filter-item-is-checked">
+                <img src="/public/images/check_icon.png" alt="check_icon.png">최신등록순
+              </button></li>
+            <li><button class="filter-item">낮은 가격순</button></li>
+            <li><button class="filter-item">높은 가격순</button></li>
+          </ul>
+        </div>
+
+        <div class="filters">
+          <h3>물건 유형</h3>
+          <ul class="filter-items">
+            <li><button class="filter-item filter-item-is-checked">
+                <img src="/public/images/check_icon.png" alt="check_icon.png">전체
+              </button></li>
+            <li><button class="filter-item">주택</button></li>
+            <li><button class="filter-item">상가</button></li>
+            <li><button class="filter-item">공장</button></li>
+            <li><button class="filter-item">임야</button></li>
+            <li><button class="filter-item">전</button></li>
+            <li><button class="filter-item">답</button></li>
+            <li><button class="filter-item">대지</button></li>
+            <li><button class="filter-item">공장용지</button></li>
+            <li><button class="filter-item">묘지</button></li>
+            <li><button class="filter-item">기타</button></li>
+          </ul>
+        </div>
+
+
+      </section>
+      <footer class="modal-card-foot">
+        <div class="input-inline-btn">
+          <button class="btn-second">초기화</button>
+          <button class="btn-primary">설정완료</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <!--타이틀바 혹은 베너 부분-->
+  <div class="subPage-banner" id="banner">
+    <img class="subPage-banner-img" src="/public/images/LA_banner.jpg" alt="MA_banner.jpg">
+    <div class="banner-title-bar">
+      <a href="#"><img src="/public/images/goback_icon_white.png" alt="goback_icon.png"></a>
+      <h1>랜드옥션</h1>
+    </div>
+  </div>
+
+  <!-- 주 내용-->
+  <section class="productList-warp">
+    <!--물건 스위치 버튼 부분-->
+    <div class="switch-btns">
+      <button class="switch-btn switch-btn-left switch-btn-is-clicked">진행 중인 물건</button>
+      <button class="switch-btn switch-btn-right">완료 물건</button>
+    </div>
+
+    <!--물건리스트 메뉴 부분-->
+    <div class="product-list-menus">
+      <h3>물건목록</h3>
+      <div class="menu-btns">
+        <a href="#" data-target="modal" onclick="modalOpen(this)">
+          <img src="/public/images/sort_icon.png" alt="sort_icon.png">
+        </a>
+        <a href="#"><img src="/public/images/calender_icon.png" alt="calender_icon.png"></a>
+      </div>
+    </div>
+
+    <!--물건 카드 부분-->
+    <div class="products-warp">
+      <div class="card product-card">
+        <div class="card-image">
+          <p class="product-card-badge">주택</p>
+          <figure class="image is-2by1">
+            <img src="/public/images/product1.png" alt="product">
+          </figure>
+        </div>
+        <div class="card-content product-infos">
+          <div class="media-content">
+            <h1 class="product-title">서래마을 2층 단독주택</h1>
+
+            <h5 class="product-located">
+              <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
+              서울시 서초구
+            </h5>
+          </div>
+
+          <div class="product-details">
+            <h5 class="product-detail">면적 : 500 (㎡)</h5>
+            <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
+            <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card product-card">
+        <div class="card-image">
+          <p class="product-card-badge">주택</p>
+          <figure class="image is-2by1">
+            <img src="/public/images/product2.png" alt="product">
+          </figure>
+        </div>
+        <div class="card-content product-infos">
+          <div class="media-content">
+            <h1 class="product-title">서래마을 2층 단독주택</h1>
+
+            <h5 class="product-located">
+              <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
+              서울시 서초구
+            </h5>
+          </div>
+
+          <div class="product-details">
+            <h5 class="product-detail">면적 : 500 (㎡)</h5>
+            <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
+            <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card product-card">
+        <div class="card-image">
+          <p class="product-card-badge">주택</p>
+          <figure class="image is-2by1">
+            <img src="/public/images/product2.png" alt="product">
+          </figure>
+        </div>
+        <div class="card-content product-infos">
+          <div class="media-content">
+            <h1 class="product-title">서래마을 2층 단독주택</h1>
+
+
+            <h5 class="product-located">
+              <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
+              서울시 서초구
+            </h5>
+          </div>
+
+          <div class="product-details">
+            <h5 class="product-detail">면적 : 500 (㎡)</h5>
+            <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
+            <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="align-center">
+      <div class="more-button">
+        물건더보기
+        <img src="/public/images/arrow_down_circle.png" alt="arrow_right_circle">
+      </div>
+    </a>
+
+
+
+  </section>
+
+  <!-- 풋터-->
+  <%- include("../layouts/footer.ejs") %>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include ("../layouts/head") %>
+    <link rel="stylesheet" href="/public/css/findPwChecked.css">
+</head>
+
+<body onload="setNavbar()">
+
+    <%- include("../layouts/header") %>
+
+
+    <!-- 주 내용-->
+    <section section class="findPwChecked-warp align-center">
+        <div class="messagepage-section">
+            <div class="messagePage-img">
+                <img src="/public/images/pw_checked.png" alt="email_check.png">
+            </div>
+            <div class="messagePage-message">
+                비밀번호 변경이 완료되었습니다.<br>
+                변경된 비밀번호로 로그인해주세요.
+            </div>
+            <div class="messagePage-btns">
+                <button class="btn-second">닫기</button>
+                <button class="btn-primary">확인</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 풋터-->
+    <%- include("../layouts/footer.ejs") %>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+
+.products-warp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card-badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -8px;
+    top: 10px;
+    z-index: 1;
+    float: right;
+
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: var(--pink-ff-6-b-6-b);
+    font-family: SpoqaHanSans;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--white-ffffff);
+}
+
+.product-card{
+    margin-bottom: 24px;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.product-infos{
+    padding: 11px 16px 10px 16px;
+}
+
+.product-title{
+    
+    height: 12px;
+    font-family: SpoqaHanSans;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.86;
+    letter-spacing: -0.41px;
+    color: #1b1d1f;
+}
+
+.product-located{
+    margin-top: 6px;
+    height: 16px;
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: -0.41px;
+    color: #72787f;
+}
+
+.product-details{
+    margin-top: 10px;
+}
+
+.product-detail{
+    margin-bottom: 8px;
+    height: 12px;
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: #454c53;
+}
+
+.more-button{
+    /* swidth: 80px; */
+    margin: 16px 0;
+    height: 20px;
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: -0.41px;
+    color: #72787f;
+}
+
+.more-button img{
+    position: relative;
+    top: 3px;
+}

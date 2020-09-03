@@ -2,14 +2,14 @@
 <html>
 
 <head>
-  
+
   <%- include ("./layouts/head.ejs") %>
   <link rel="stylesheet" href="/public/css/main.css">
 </head>
 
 <body onload="setNavbar()">
 
-<!-- 스크롤시 네비바의 색상을 처리함 -->
+  <!-- 스크롤시 네비바의 색상을 처리함 -->
 
 
 
@@ -139,7 +139,7 @@
       <div class="align-center">
         <button class="button is-rounded is-info is-active landtoken-button">구매하기</button>
       </div>
-      
+
     </div>
 
 
@@ -152,53 +152,82 @@
     </div>
 
     <div class="mainPage-category-warp">
-      <div class="card product-card">
+      <div class="products-warp">
+        <div class="card product-card">
           <div class="card-image">
+            <p class="product-card-badge">주택</p>
             <figure class="image is-2by1">
               <img src="/public/images/product1.png" alt="product">
             </figure>
           </div>
-        <div class="card-content product-infos">
-          <div class="media-content">
-            <h1 class="product-title">서래마을 2층 단독주택</h1>
-            
+          <div class="card-content product-infos">
+            <div class="media-content">
+              <h1 class="product-title">서래마을 2층 단독주택</h1>
 
-            <h5 class="product-located">
-              <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
-              서울시 서초구
-            </h5>
-          </div>
-            
-          <div class="product-details">
-            <h5 class="product-detail">면적 : 500 (㎡)</h5>
-            <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
-            <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+              <h5 class="product-located">
+                <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
+                서울시 서초구
+              </h5>
+            </div>
+
+            <div class="product-details">
+              <h5 class="product-detail">면적 : 500 (㎡)</h5>
+              <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
+              <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <div class="card product-card">
-        <div class="card-image">
-          <figure class="image is-2by1">
-            <img src="/public/images/product2.png" alt="product">
-          </figure>
-        </div>
-        <div class="card-content product-infos">
-          <div class="media-content">
-            <h1 class="product-title">서래마을 2층 단독주택</h1>
-            
-
-            <h5 class="product-located">
-              <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
-              서울시 서초구
-            </h5>
+        <div class="card product-card">
+          <div class="card-image">
+            <p class="product-card-badge">주택</p>
+            <figure class="image is-2by1">
+              <img src="/public/images/product2.png" alt="product">
+            </figure>
           </div>
-            
-          <div class="product-details">
-            <h5 class="product-detail">면적 : 500 (㎡)</h5>
-            <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
-            <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+          <div class="card-content product-infos">
+            <div class="media-content">
+              <h1 class="product-title">서래마을 2층 단독주택</h1>
+
+              <h5 class="product-located">
+                <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
+                서울시 서초구
+              </h5>
+            </div>
+
+            <div class="product-details">
+              <h5 class="product-detail">면적 : 500 (㎡)</h5>
+              <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
+              <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card product-card">
+          <div class="card-image">
+            <p class="product-card-badge">주택</p>
+            <figure class="image is-2by1">
+              <img src="/public/images/product2.png" alt="product">
+            </figure>
+          </div>
+          <div class="card-content product-infos">
+            <div class="media-content">
+              <h1 class="product-title">서래마을 2층 단독주택</h1>
+
+
+              <h5 class="product-located">
+                <img src="/public/images/located_icon.png" style="float: left; padding-right: 3px;" alt="located_icon">
+                서울시 서초구
+              </h5>
+            </div>
+
+            <div class="product-details">
+              <h5 class="product-detail">면적 : 500 (㎡)</h5>
+              <h5 class="product-detail">가격 : 3억 5천만 (\)</h5>
+              <h5 class="product-detail">최저입찰가 : 4억 (\)</h5>
+            </div>
           </div>
         </div>
       </div>
@@ -221,7 +250,7 @@
       </div>
     </div>
 
-    
+
     <div class="mainPage-category-warp">
       <!--랜드아카데미 tag부분-->
       <div class="tags landAcademy-tags columns">
@@ -244,7 +273,7 @@
               <div class="video-card-tag bg-pk">신규강의</div>
               <div class="video-card-tag bg-sk">인기강의</div>
             </div>
-          </div>           
+          </div>
           <div class="align-right">
             <button class="video-card-button button is-info is-active ">강의보기</button>
           </div>
@@ -264,7 +293,7 @@
               <div class="video-card-tag bg-pk">신규강의</div>
               <div class="video-card-tag bg-sk">인기강의</div>
             </div>
-          </div>           
+          </div>
           <div class="align-right">
             <button class="video-card-button button is-info is-active ">강의보기</button>
           </div>
@@ -301,13 +330,13 @@
             <img src="/public/images/landSaving_icon.png" alt="landSaving_icon">
           </li>
         </ul>
-      </div>  
+      </div>
     </div>
   </section>
 
 
   <!-- 풋터-->
-  <%- include ("layouts/footer") %> 
+  <%- include ("layouts/footer") %>
 
 
 

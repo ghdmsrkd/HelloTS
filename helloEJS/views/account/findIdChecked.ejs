@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include ("../layouts/head") %>
+  <link rel="stylesheet" href="/public/css/findIdChecked.css">
+</head>
+
+<body onload="setNavbar()">
+
+  <%- include("../layouts/header") %>
+
+
+  <!-- 주 내용-->
+  <section section class="findIdChecked-warp">
+
+    <div class="title-bar">
+      <a href="#"><img src="/public/images/goback_icon.png" alt="goback_icon.png"></a>
+      <h1>아이디 찾기</h1>
+    </div>
+
+    <div class="form-section">
+      <form action="">
+        <div class="input-block">
+          <label for="" class="input-label">이름</label>
+          <div class="input-inline input-inline-btn">
+            <input type="text" class="input-text input-text-checked" placeholder="이름" value="강은호" disabled>
+            <input type="submit" class="btn-primary-sm btn-primary-checked" value="확인완료" disabled>
+          </div>
+        </div>
+        <div class="findIdChecked-message">
+          <h3>아이디 찾기 완료</h3>
+          <div>kang@landbox.kr</div>
+        </div>
+
+        <div class="input-inline-btn">
+          <button class="btn-second">비밀번호 재설정</button>
+          <button class="btn-primary">로그인</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- 풋터-->
+  <%- include("../layouts/footer.ejs") %>
+
+</body>
+
+</html>

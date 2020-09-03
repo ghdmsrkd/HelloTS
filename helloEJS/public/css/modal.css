@@ -1,0 +1,39 @@
+
+
+.modal-card{
+    width: 90%;
+    /* height: 460px; */
+    border-radius: 10px;
+    background-color: var(--white-ffffff);
+}
+
+.modal-card-head{
+    border: none;
+    background-color: var(--white-ffffff);
+}
+
+
+
+.modal-card-foot{
+    border: none;
+    background-color: var(--white-ffffff);
+}
+
+
+.modal-card-title{
+    text-align: center;
+    font-family: SpoqaHanSans;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -0.41px;
+    color: var(--black-1-b-1-d-1-f);
+}
+
+.modal-card-body h5{
+    font-family: SpoqaHanSans;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: -0.41px;
+    color: var(--grey-60-72787-f);
+}

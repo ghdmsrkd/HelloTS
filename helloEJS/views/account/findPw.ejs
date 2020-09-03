@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <%- include ("layouts/head") %>
-  <link rel="stylesheet" href="/public/css/findPw.css">
+    <%- include ("../layouts/head") %>
+    <link rel="stylesheet" href="/public/css/findPw.css">
 </head>
+
 <body onload="setNavbar()">
 
-  <%- include("layouts/header") %> 
+    <%- include("../layouts/header") %>
 
 
-  <!-- 주 내용-->
+    <!-- 주 내용-->
     <section section class="findPw-warp">
         <div class="title-bar">
             <a href="#"><img src="/public/images/goback_icon.png" alt="goback_icon.png"></a>
@@ -27,7 +29,7 @@
                 <div class="input-block">
                     <label for="" class="input-label">이름</label>
                     <div class="input-inline input-inline-btn">
-                        <input type="text" class="input-text" placeholder="이름" value="">    
+                        <input type="text" class="input-text" placeholder="이름" value="">
                         <input type="submit" class="btn-primary-sm" value="본인확인">
                     </div>
                 </div>
@@ -37,7 +39,7 @@
                     <h5 class="input-description">* 숫자, 영문, 특수문자 중 2가지 이상 조합해주세요.</h5>
                 </div>
                 <div class="input-block">
-                    <label for="" class="input-label" >비밀번호 확인</label>
+                    <label for="" class="input-label">비밀번호 확인</label>
                     <input type="password" class="input-text" placeholder="비밀번호 확인">
                     <h5></h5>
                 </div>
@@ -50,8 +52,8 @@
         </div>
     </section>
 
-  <!-- 풋터-->
-  <%- include("layouts/footer.ejs") %> 
+    <!-- 풋터-->
+    <%- include("../layouts/footer.ejs") %>
 
 </body>
 

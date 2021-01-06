@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@types/connect-livereload": "^0.5.31",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "connect-livereload": "^0.6.1",
     "easy-livereload": "^1.4.3",
     "livereload": "^0.9.1",
